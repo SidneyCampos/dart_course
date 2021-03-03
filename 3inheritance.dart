@@ -1,4 +1,11 @@
-main(List<String> args) {}
+main(List<String> args) {
+  var dog = Dog(); //default dog constructor
+  dog.name = 'dart';
+  dog.printMember();
+  dog.move();
+
+  var dog2 = Dog.myDogClass();
+}
 
 class Animal {
   String name = 'Animal';
@@ -27,5 +34,15 @@ class Dog extends Animal {
 
   Dog.myDogClass() : super.myBaseClass() {
     print('Dog class Named Constructor');
+  }
+
+  @override
+  void printMember() {
+    print('Dog name: ${this.name}');
+  }
+
+  @override
+  void move() {
+    print('Dog is walking');
   }
 }

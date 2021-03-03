@@ -14,7 +14,7 @@ String optionParam(String name, int age, [int year]) {
   return "name: $name - age : $age - year : $year";
 } //O último parâmetro é opcional
 
-//ONDE PAREI - 34:52
+//ONDE PAREI - 41:07
 main(List<String> args) {
   int myint = 0;
   double mydouble = 45.45454545;
